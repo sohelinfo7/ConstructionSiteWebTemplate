@@ -4,9 +4,9 @@ Master Style Sheet
 
 Template Name: Dream Builder
 Template URL:
-Author: Sohel Rana
-Author URL:
-Description: Dream Builder - Construction & Real Estate Company HTML Template
+Author: modernuiux
+Author URL: http://modernuiux.com/
+Description: Dream Builder - Real Estate & Construction Company HTML Template
 Version: 1.0.0
 
 */
@@ -66,9 +66,6 @@ Table of Content
 /*====================================
           2. Typography
 =====================================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -107,13 +104,13 @@ h6 {
   font-family: 'Poppins', sans-serif;
   margin: 0px;
   color: var(--headerText);
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 h1 {
   font-weight: 700;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 48px;
 }
 
 h2 {
@@ -376,7 +373,7 @@ a {
   width: 100%;
   left: 0;
   top: 0;
-  opacity: .85;
+  opacity: .90;
   background: var(--whiteColor);
   z-index: -1;
 }
@@ -487,7 +484,6 @@ a {
 /*-------Section Herder Style----------*/
 .section-header h2 {
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
@@ -523,6 +519,7 @@ a {
 
 .item-text h3 {
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .item-text p {
@@ -718,7 +715,10 @@ a {
   text-transform: capitalize;
   color: var(--whiteColor);
 }
-
+.page-header p{
+font-size: 16px !important;
+line-height: 27px;
+}
 /*====================================
            5. Button Styles
 ======================================*/
@@ -733,7 +733,6 @@ a {
   font-size: 15px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   text-decoration: none;
   /* Yellow */
@@ -904,7 +903,6 @@ a {
 ======================================*/
 
 .nav-item a {
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 14px;
@@ -1396,7 +1394,7 @@ a.nav-link.active {
   font-size: 20px;
   line-height: 30px;
   color: var(--whiteColor);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .hero-content h1 {
@@ -1428,7 +1426,6 @@ a.nav-link.active {
   font-size: 15px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   text-decoration: none;
   transition: .6s;
@@ -1682,7 +1679,6 @@ button.mixitup-control-active::after {
 }
 
 .paragraph-text h3 {
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--headerText);
   margin-bottom: 10px;
@@ -1705,7 +1701,6 @@ button.mixitup-control-active::after {
   font-weight: 400;
   font-size: 17px;
   line-height: 26px;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--headerText);
   margin-bottom: 10px;
@@ -1754,7 +1749,6 @@ button.mixitup-control-active::after {
   font-size: 19px;
   line-height: 28px;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--whiteColor);
 }
 
@@ -1771,7 +1765,6 @@ button.mixitup-control-active::after {
   font-size: 15px;
   line-height: 22px;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--themeColor);
 }
 
@@ -1780,7 +1773,6 @@ button.mixitup-control-active::after {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--whiteColor);
 }
 
@@ -1904,7 +1896,6 @@ button.mixitup-control-active::after {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--whiteColor);
 }
@@ -1914,7 +1905,6 @@ button.mixitup-control-active::after {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  letter-spacing: 0.02em;
   color: var(--lightGray);
 }
 
@@ -2006,7 +1996,6 @@ button.mixitup-control-active::after {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.02em;
   color: var(--headerText);
   margin-bottom: 0;
   text-decoration: none;
@@ -2072,7 +2061,6 @@ button.mixitup-control-active::after {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--whiteColor);
   margin-bottom: 20px;
@@ -2093,7 +2081,6 @@ button.mixitup-control-active::after {
   font-weight: 300;
   font-size: 14px;
   line-height: 30px;
-  letter-spacing: 0.02em;
   color: var(--whiteColor);
   text-decoration: none;
   transition: all .3s ease 0s;
@@ -2115,7 +2102,6 @@ button.mixitup-control-active::after {
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
-  letter-spacing: 0.02em;
   color: var(--lightGray);
 }
 
@@ -2139,7 +2125,6 @@ button.mixitup-control-active::after {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.02em;
   color: var(--whiteColor);
   margin-bottom: 0;
 }
@@ -2175,7 +2160,6 @@ button.mixitup-control-active::after {
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  letter-spacing: 0.02em;
   color: var(--whiteColor);
   text-decoration: none;
 }
@@ -2282,7 +2266,7 @@ button.mixitup-control-active::after {
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -2296,7 +2280,7 @@ button.mixitup-control-active::after {
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -2410,7 +2394,7 @@ ul.ul-list-item li::marker {
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -2441,7 +2425,7 @@ ul.ul-list-item li::marker {
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -2486,12 +2470,12 @@ ul.ul-list-item li::marker {
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
 .bg-image-Team-member-overview {
-  background: url(../images/team/expert_detail.jpg);
+  background: url(../images/bg/bg_expert_video.jpg);
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -2528,7 +2512,6 @@ ul.ul-list-item li::marker {
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 0.4px;
   color: var(--headerText);
 }
 
@@ -2536,7 +2519,6 @@ ul.ul-list-item li::marker {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.28px;
   text-decoration: none;
   color: var(--headerText);
   display: block;
@@ -2561,6 +2543,6 @@ ul.ul-list-item li::marker {
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }

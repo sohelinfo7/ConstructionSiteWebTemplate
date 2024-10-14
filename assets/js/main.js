@@ -1,7 +1,5 @@
-
-
-$(document).ready(function ($) {
-  "use strict";
+(function ($) {
+    "use strict";
   /*Table of content
   ----------------------------------------*/
   /*
@@ -23,12 +21,12 @@ $(document).ready(function ($) {
                     1. WOW Js
   =================================================*/
   // WOW Js Active
-  new WOW().init();
+    new WOW().init();
 
   /*===============================================
                      2. Counter up 
    ================================================*/
-  const counterClass = document.getElementsByClassName('counter-up').length > 0;
+    const counterClass = document.getElementsByClassName('counter-up').length > 0;
   if (counterClass) {
     $(".counter-up").counterUp({
       delay: 10,
@@ -40,7 +38,7 @@ $(document).ready(function ($) {
   /*===============================================
                        3. Mixitup 
    ===============================================*/
-  const mixitupClass = document.getElementsByClassName('project-content').length > 0;
+    const mixitupClass = document.getElementsByClassName('project-content').length > 0;
   if (mixitupClass) {
     var mixer = mixitup('.project-content',
       {
@@ -53,7 +51,7 @@ $(document).ready(function ($) {
   /*===============================================
                    4. Team Slick Slider 
  ==================================================*/
-  const teamSliderClass = document.getElementsByClassName('team-slider').length > 0;
+    const teamSliderClass = document.getElementsByClassName('team-slider').length > 0;
   if (teamSliderClass) {
     $('.team-slider').slick({
       slidesToShow: 4,
@@ -93,7 +91,7 @@ $(document).ready(function ($) {
   /*=============================================== 
                  5. Client Slick Slider 
   ================================================*/
-  const clientSliderClass = document.getElementsByClassName('clients-slider').length > 0;
+    const clientSliderClass = document.getElementsByClassName('clients-slider').length > 0;
   if (clientSliderClass) {
     $('.clients-slider').slick({
       slidesToShow: 7,
@@ -142,7 +140,7 @@ $(document).ready(function ($) {
   /*=============================================== 
                  6. Testimonial Slick Slider
   ================================================*/
-  const testimonialSliderClass = document.getElementsByClassName('testimonial-slider').length > 0;
+    const testimonialSliderClass = document.getElementsByClassName('testimonial-slider').length > 0;
   if (testimonialSliderClass) {
     $('.testimonial-slider').slick({
       slidesToShow: 1,
@@ -157,7 +155,7 @@ $(document).ready(function ($) {
   /*=============================================== 
                 7. Hero Slick Slider
   ================================================*/
-  const heroSliderClass = document.getElementsByClassName('hero-slider').length > 0;
+    const heroSliderClass = document.getElementsByClassName('hero-slider').length > 0;
   if (heroSliderClass) {
     $('.hero-slider').slick({
       slidesToShow: 1,
@@ -177,7 +175,7 @@ $(document).ready(function ($) {
   /*=============================================== 
                 8. Progress Bar Animation
   ================================================*/
-  const progressBarClass = document.getElementsByClassName('skillbar').length > 0;
+    const progressBarClass = document.getElementsByClassName('skillbar').length > 0;
   if (progressBarClass) {
     $('.skillbar').waypoint(function () {
       $('.skillbar').skillBars({
@@ -264,72 +262,72 @@ $(document).ready(function ($) {
   /*=============================================== 
                13. Stickty Nave
  ================================================*/
- //-------------For All pages---------------------
- const stickyNave = document.getElementById('sticky1-navbar-section');
- if (stickyNave) {
-  window.onscroll = function () { stickyFunction() };
+  //-------------For All pages---------------------
+  const stickyNave = document.getElementById('sticky1-navbar-section');
+  if (stickyNave) {
+    window.onscroll = function () { stickyFunction() };
 
-  var navbar = document.getElementById("sticky1-navbar-section");
-  var sticky = navbar.offsetTop;
+    var navbar = document.getElementById("sticky1-navbar-section");
+    var sticky = navbar.offsetTop;
 
-  function stickyFunction() {
-    if (window.pageYOffset > sticky) {
-      navbar.classList.add("sticky1");
+    function stickyFunction() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky1");
 
-    } else {
-      navbar.classList.remove("sticky1");
+      } else {
+        navbar.classList.remove("sticky1");
+      }
     }
   }
- }
- //-------------For All pages End----------------
- //-------------For Home 2-----------------------
- const stickyNaveHome2 = document.getElementById('sticky2-navbar-section');
- if (stickyNaveHome2) {
-  window.onscroll = function () { stickyFunction() };
+  //-------------For All pages End----------------
+  //-------------For Home 2-----------------------
+  const stickyNaveHome2 = document.getElementById('sticky2-navbar-section');
+  if (stickyNaveHome2) {
+    window.onscroll = function () { stickyFunction() };
 
-  var navbar = document.getElementById("sticky2-navbar-section");
-  var navbar2 = document.getElementById("sticky2-navbar");
-  var sticky = navbar.offsetTop;
+    var navbar = document.getElementById("sticky2-navbar-section");
+    var navbar2 = document.getElementById("sticky2-navbar");
+    var sticky = navbar.offsetTop;
 
-  function stickyFunction() {
-    if (window.pageYOffset > sticky) {
-      navbar.classList.add("sticky2");
+    function stickyFunction() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky2");
 
-      navbar2.classList.add("nav-bg-white");
-      navbar2.classList.remove("navbar-dark");
+        navbar2.classList.add("nav-bg-white");
+        navbar2.classList.remove("navbar-dark");
 
-      $("#logo-for-whitebg").show();
-      $("#logo-for-darkbg").hide();
+        $("#logo-for-whitebg").show();
+        $("#logo-for-darkbg").hide();
 
-    } else {
-      navbar.classList.remove("sticky2");
-      navbar2.classList.remove("nav-bg-white");
-      navbar2.classList.add("navbar-dark");
+      } else {
+        navbar.classList.remove("sticky2");
+        navbar2.classList.remove("nav-bg-white");
+        navbar2.classList.add("navbar-dark");
 
-      $("#logo-for-whitebg").hide();
-      $("#logo-for-darkbg").show();
+        $("#logo-for-whitebg").hide();
+        $("#logo-for-darkbg").show();
+      }
     }
   }
- }
- //-------------For Home 2 End------------------
-//-------------For Home 3-----------------------
-const stickyNaveHome3 = document.getElementById('sticky3-navbar-section');
- if (stickyNaveHome3) {
-  window.onscroll = function () { stickyFunction() };
+  //-------------For Home 2 End------------------
+  //-------------For Home 3-----------------------
+  const stickyNaveHome3 = document.getElementById('sticky3-navbar-section');
+  if (stickyNaveHome3) {
+    window.onscroll = function () { stickyFunction() };
 
-  var navbar = document.getElementById("sticky3-navbar-section");
-  var navbar2 = document.getElementById("top-navbar-home3");
-  var sticky = navbar.offsetTop;
-  
-  function stickyFunction() {
-    if (window.pageYOffset >= 200) {
-      navbar2.classList.add("sticky3");
-    } else {
-      navbar2.classList.remove("sticky3");
+    var navbar = document.getElementById("sticky3-navbar-section");
+    var navbar2 = document.getElementById("top-navbar-home3");
+    var sticky = navbar.offsetTop;
+
+    function stickyFunction() {
+      if (window.pageYOffset >= 200) {
+        navbar2.classList.add("sticky3");
+      } else {
+        navbar2.classList.remove("sticky3");
+      }
     }
   }
- }
 
- //-------------For Home 2 End------------------
+  //-------------For Home 2 End------------------
   //=======================END========================
-}(jQuery));
+})(jQuery);
